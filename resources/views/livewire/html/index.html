@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta charset="utf-8" />
+<title>Linc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<!-- BEGIN CORE CSS FRAMEWORK -->
+<link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="assets/plugins/boostrapv3/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/boostrapv3/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+<link href="assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/animate.min.css" rel="stylesheet" type="text/css"/>
+<!-- END CORE CSS FRAMEWORK -->
+<!-- BEGIN CSS TEMPLATE -->
+<link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+<link href="assets/css/custom-icon-set.css" rel="stylesheet" type="text/css"/>
+<!-- END CSS TEMPLATE -->
+
+<style type="text/css">
+
+  .lockscreen-wrapper {
+position: relative;
+ margin-top: 0 !important;
+}
+
+.login-container {
+margin-top: 23% !important;
+}
+
+.loginform{
+  width: 53%;
+  margin-bottom: 7px;
+  margin-right: 7px;
+}
+
+.forgot{
+  margin-left: 86px;
+}
+
+</style>
+</head>
+<!-- END HEAD -->
+<!-- BEGIN BODY -->
+<body class="error-body no-top">
+
+  <!-- Begin Contenido -->
+<div class="container">
+  <div class="row login-container column-seperation">
+        <div class="col-md-5 col-md-offset-1 animated  flipInX">
+          <img id="logo" width="109" height="69" src="assets/img/logoo.png" alt="">
+
+          <h2>Platform for Partners</h2>
+          <p>This platform is used exclusively for partner organization.<br>
+             If you require an account contact the administrative office linc.<br>
+            <a href="#">Contact</a>
+           </p>
+
+          <br>
+        </div>
+        <div class="col-md-5 "> <br>
+		 <form id="loginSubmit" class="login-form" >
+		 <div class="lockscreen-wrapper animated  flipInX">
+  <div class="row ">
+    <div class="col-md-12">
+    <div class="profile-wrapper">
+      <img id="avatar" width="69" height="69" data-src-retina="assets/img/profiles/profile.png" data-src="assets/img/profiles/profile.png" src="assets/img/profiles/profile.png" alt="" style="
+    background-color: white;">
+    </div>
+
+      <h2 id="user"></h2>
+      <input  type="email" class="loginform" placeholder="Email" id="email" />
+      <input type="password" class="loginform" placeholder="Password" id="password" />
+
+      <button type="button" class="btn btn-success btn-cons" id="login_toggle">Login</button>
+      <br><br>
+      <div class="forgot"><a href="#">Forgot you password?</a></div>
+
+    </div>
+   </div>
+  </div>
+		  </form>
+        </div>
+
+
+  </div>
+</div>
+  <!-- END Contenido -->
+<!-- END CONTAINER -->
+<!-- BEGIN CORE JS FRAMEWORK-->
+{{ HTML::script('assets/plugins/jquery-1.8.3.min.js') }}
+{{ HTML::script('assets/plugins/bootstrap/js/bootstrap.min.js') }}
+{{ HTML::script('assets/plugins/pace/pace.min.js') }}
+{{ HTML::script('assets/plugins/jquery-validation/js/jquery.validate.min.js') }}
+{{ HTML::script('assets/js/login.js') }}
+<!-- BEGIN CORE TEMPLATE JS -->
+<!-- END CORE TEMPLATE JS -->
+
+ {{ HTML::script('https://cdn.firebase.com/js/client/1.1.2/firebase.js') }}
+{{ HTML::script('assets/js/app.js') }}
+</body>
+</html>
