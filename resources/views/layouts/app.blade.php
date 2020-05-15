@@ -26,6 +26,11 @@
                             {{ config('app.name', 'Laravel') }}
                         </a>
                     </div>
+                    <div class="mr-6">
+                        <a href="{{ url('/contacts') }}" class="text-lg font-semibold text-gray-100 no-underline">
+                            Contacts
+                        </a>
+                    </div>
                     <div class="flex-1 text-right">
                         @guest
                             <a class="no-underline hover:underline text-gray-300 text-sm p-3" href="{{ route('login') }}">{{ __('Login') }}</a>

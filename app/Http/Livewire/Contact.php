@@ -9,7 +9,7 @@ class Contact extends Component
 {
   public $data, $name, $email, $selected_id;
   public $updateMode = false;
-  
+
   public function render()
   {
       $this->data = Contactos::all();
@@ -31,6 +31,10 @@ class Contact extends Component
           'email' => $this->email
       ]);
       $this->resetInput();
+
+      session()->flash('message', 'Contact successfully updated.');
+
+      
   }
   public function edit($id)
   {

@@ -20,3 +20,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::view('contacts', 'users.contacts');
+// Route::view('404', 'users.contacts');
